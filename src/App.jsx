@@ -18,6 +18,10 @@ class App extends Component {
   componentDidMount() {
     axios.get('https://restcountries.eu/rest/v2/all').then( res => this.setState({data: res.data}));
     this.setState({setUserInput: this.setUserInput, getCountry: this.getCountry});
+
+    if(window.location.pathname === "/"){
+      window.location.pathname = "/IN";
+    }
   }
   setUserInput = (value) => {
     this.setState({userInput: value});
