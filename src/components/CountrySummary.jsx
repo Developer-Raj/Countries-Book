@@ -13,7 +13,6 @@ class CountrySummary extends Component {
       this.setState({data: this.context.data})
       let filter = this.state.data.filter(country => window.location.pathname.replace('/', "") === country.alpha2Code);
       this.setState({filterLocation: filter});
-      console.log(filter)
     }, 3000)
   }
   returnFilteredData = () => {
