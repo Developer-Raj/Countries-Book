@@ -37,7 +37,7 @@ class CountrySummary extends Component {
                 <h4>Sub Region: <span>{country.subregion}</span></h4>
                 <h4>Population: <span>{country.population}</span></h4>
                 <h4>Area: <span>{country.population}</span></h4>
-                <h4>Denonym: <span>{country.denonym}</span></h4>
+                <h4>Demonym: <span>{country.demonym}</span></h4>
                 <h4>Timezone: <span>{country.timezones[0]}</span></h4>
                 <h4>Currency Code-Symbol: <span>{country.currencies[0].code}-{country.currencies[0].symbol}</span></h4>
               </div>
